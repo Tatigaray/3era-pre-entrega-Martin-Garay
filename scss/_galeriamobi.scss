@@ -1,0 +1,61 @@
+#galeriamobi{
+    display:grid;
+    height: 2200px;
+    grid-template-rows: 30% 30% 30%;
+    grid-template-columns: 30% 30% 30% ;
+    grid-template-areas:"a1 a2 a3"
+                        "a4 a5 a6"
+                        "a7 a8 a9";
+                        
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+
+    & .foto1{
+        grid-area: a1;
+        width: 80%;
+        height: 80%;
+    }
+    
+    & .foto2{
+        grid-area: a2;
+        width: 80%;
+        height: 80%;
+    }
+    & .foto3{
+        grid-area: a3;
+        width: 80%;
+        height: 80%;
+    }
+    & .foto4{
+        grid-area: a4;
+        width: 80%;
+        height: 80%;
+    }
+    & .foto5{
+        grid-area: a5;
+        width: 80%;
+        height: 80%;
+    }
+    & .foto6{
+        grid-area: a6;
+        width: 80%;
+        height: 80%;
+    }
+    & .foto7{
+        grid-area: a7;
+        width: 80%;
+        height: 80%;
+    }
+    & .foto8{
+        grid-area: a8;
+        width: 80%;
+        height: 80%;
+    }
+    & .foto9{
+        grid-area: a9;
+        width: 80%;
+        height: 80%;
+    }
+}

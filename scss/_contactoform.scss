@@ -1,0 +1,81 @@
+.containerform{
+    width: 100%;
+    height: auto;
+    max-width: 1100px;
+    margin-top: 350px;
+    margin-bottom: 250px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    font-family: $tipografia;
+    color: $colorprincipal;
+
+    & h2{
+        margin-bottom: 15px;
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    & p{
+        font-size: 17px;
+        line-height: 2;
+        margin-bottom: 30px;
+    }
+
+    & a{
+        @include tipocolor ($colorprincipal, $tipografia);
+        font-size: 17px;
+        color: rgb(51, 134, 186);
+        font-family: 'Roboto', sans-serif;
+        display: inline-block;
+        text-decoration: none;
+        width: 100%;
+        margin-bottom: 5px;
+        margin-top: 25px;
+        font-weight: 300;
+
+        & i{
+            color: rgb(51, 134, 186);
+            margin-right: 10px;
+        }
+    }
+
+    & .campo, textarea{
+        width: 100%;
+        padding: 15px 10px;
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        color: rgb(51, 134, 186);
+        border: 2px solid;
+        border-color: rgb(51, 134, 186);
+        margin-bottom: 50px;
+        border-radius: 3px;
+        outline: 0px;
+    }
+
+    & form textarea{
+        max-width: 600px;
+        min-width: 600px;
+        min-height: 350px;
+        max-height: 350px;
+    }
+
+    & .btn-enviar{
+        padding: 15px;
+        font-size: 16px;
+        border: none;
+        background: white;
+        color: rgb(51, 134, 186);
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all 300ms ease;
+
+        &:hover{
+            background: rgb(51, 134, 186);
+            color: white;
+        }
+    }
+} 
